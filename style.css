@@ -1,0 +1,255 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "Marmelad";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Marmelad"),
+         url("/fonts/Marmelad/Marmelad-Regular.woff2") format("woff2"),
+         url("/fonts/Marmelad/Marmelad-Regular.woff") format("woff"),
+         url("/fonts/Marmelad/Marmelad-Regular.ttf") format("ttf");
+  }
+  
+
+body{
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Marmelad", sans-serif;
+}
+
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 140px;
+}
+  
+.header__left {
+flex-basis: 20%;
+}
+
+.header__center {
+flex-basis: 80%;
+}
+
+.menu__list {
+display: flex;
+align-items: center;
+gap: 0 65px;
+justify-content: center;
+}
+
+.logo{
+    margin-bottom: 35px;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
+
+a.is_active{
+    text-decoration: line-through;
+}
+
+
+
+
+.cssSlider {
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.cssSlider .slides {
+	overflow: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 70vmin;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cssSlider .slides > li {
+	width: 100%;
+	height: 70vmin;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.cssSlider .slides > li > img {
+	width: 100%;
+	height: auto;
+}
+/*
+.cssSlider .slides > li:first-child:not(:target) {
+	z-index: 1;
+	-webkit-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+*/
+.cssSlider .thumbnails {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.cssSlider .thumbnails > li {
+	float: left;
+	width: 20%;
+}
+.cssSlider .thumbnails > li > a {
+	display: block;
+}
+.cssSlider .thumbnails > li > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.cssSlider .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+.cssSlider .slides li:not(:target) {
+	-webkit-animation: hidden 1s 1;
+}
+@-webkit-keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@keyframes slide {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+}
+@-webkit-keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+@keyframes hidden {
+	0% {
+		z-index: 2;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+	}
+	100% {
+		z-index: 2;
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+
+
+  
+.contact-card {
+    width: 300px;
+    height: 400px;
+    background-color: #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+  
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+  
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+  
+.name {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+  
+.social-links {
+    margin-top: 30px;
+}
+  
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* .social-links li {
+    margin-right: 20px;
+}
+  
+.social-links a {
+    color: #337ab7;
+    transition: color 0.2s ease;
+}
+  
+.social-links a:hover {
+    color: #23527c;
+}
+  
+.social-links i {
+    font-size: 24px;
+} */
